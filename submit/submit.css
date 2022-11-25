@@ -1,0 +1,100 @@
+body {
+    background-image: url(SVGS/background.svg);
+    /* background-color: white; */
+    background-size: 100%;
+    animation:body-load 1s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+input {
+    border-radius: 10px;
+    border-color: rgba(75, 170, 207, 1);
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    width:700px;
+    font-size: large;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    column-gap: 20px;
+    font-family: Microsoft YaHei UI ;
+    outline: none;
+}
+
+.submit{
+    background-image: url(SVGS/button-background.svg);
+    margin: auto;
+    padding: 100px;
+    width: 700px;
+    border-radius: 20px;
+    height:auto;
+}
+
+.gmail {
+    width: 300px;
+    font-size: large;
+    background-color: rgba(255,255,255,0.7);
+    border-color: rgba(255,255,255,0);
+    font-family: Microsoft YaHei UI ;
+
+}
+
+button{
+    font-family: Microsoft YaHei UI ;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+    height:50px;
+    background-color: rgba(0,0,0,0);
+    border-left-color: #ff854c;
+    border-top-color: #ff854c;
+    border-bottom-color: aquamarine;
+    border-right-color: aquamarine;
+    color: white;
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+button:hover{
+    opacity: 1;
+    transition-duration: 0.3s;
+    
+}
+
+.cancel {
+    /* background-color: rgb(243, 25, 25); */
+    background-color: rgba(0,0,0,0);
+    border-color: grba(0,0,0,0);
+    border-top-color:#ff854c;
+    border-left-color: #ff854c;
+    display: block;
+    border-radius: 20%;
+    background-image: url(SVGS/x.svg);
+    background-position-x:4px;
+    background-position-y:4px;
+    height: 36px;
+    width: 36px;
+}
+
+.arrow {
+    position: relative;
+    top:-90px;
+    left:-90px;
+}
+
+@keyframes body-load {
+    0% {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
